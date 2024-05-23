@@ -1,3 +1,12 @@
+<script>
+    let images = [
+        'logo.png',
+        'shittop.png'
+    ]
+
+    let image = images[Math.floor(Math.random() * images.length)]
+</script>
+
 <head>
     <style>
         body, html {
@@ -24,7 +33,7 @@
 </head>
 <body>
     <div class="content">
-        <img src="logo.png" alt="Logo">
+        <img src={image} alt="Logo" height=400px width=400px>
         <p class="slogan">Bird Shit Software LLC</p>
     </div>
 </body>
